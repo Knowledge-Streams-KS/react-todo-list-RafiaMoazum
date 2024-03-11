@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskListContainer{
+    display:flex;
+    flex-direction: row;
+    
+}
+.inner{
+    border:2px solid black;
+    padding: 20px;
+    /* background-color: rgb(140, 238, 238); */
+
+}
