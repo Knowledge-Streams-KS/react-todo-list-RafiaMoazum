@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Task.css";
 
 const Task = (props) => {
@@ -13,9 +13,6 @@ const Task = (props) => {
       setIsCompleted(false)
     }
 
-    const handleDelete = () =>{
-      props.delete();
-    }
 
     const handleCheck = () =>{
       setIsCompleted(!isCompleted)
@@ -36,8 +33,6 @@ const Task = (props) => {
         <button className="IncompleteBtn" onClick={handleIncomplete}>Incomplete</button>
         <button className="deleteBtn" onClick={() => props.delete(props.taskNumber)}>Delete</button>
 
-
-      
       </div>
       </div>
     </>
@@ -45,3 +40,4 @@ const Task = (props) => {
 };
 
 export default Task;
+
