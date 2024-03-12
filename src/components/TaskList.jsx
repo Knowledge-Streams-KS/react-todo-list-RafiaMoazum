@@ -27,7 +27,6 @@ function TaskList() {
 
     const updatedTaskList = [...taskList];
     updatedTaskList.splice(index,1);
-
     setTaskList(updatedTaskList)
 
     //setTaskList(taskList.splice(index,1))
